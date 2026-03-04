@@ -1,7 +1,7 @@
 ## SaaS Customer Churn Prediction
 
 Predicting customer churn using classical machine learning models with business-aligned evaluation.
-
+Live API: [docs](https://saas-customer-churn-prediction.onrender.com/docs)
 ---
 
 **Overview**
@@ -36,9 +36,5 @@ Final selection prioritized recall over raw accuracy.
 False negatives (missed churners) are more costly than false positives.  
 The classification threshold was lowered to increase recall so that potential churners do not become a blind spot in the system.
 
----
 
-**Deployment**
-
-The final preprocessing + model pipeline is serialized using `joblib`, making it ready for integration into a FastAPI backend for real-time inference.
 
